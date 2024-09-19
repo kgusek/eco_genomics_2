@@ -42,7 +42,7 @@ chromoqc(chr1, xlim=c(1e1, 1.1e8)): plots from one telomere to the other, each d
 
 pdf: pdf writer
 
-### 9/17/24 Filtering Strategies 
+### 9/17/24 Filtering Strategies
 
 Filtered vcf files based on missingness and depth, cut off outliers
 
@@ -81,3 +81,23 @@ if you dont have at least three reads at a given SNP position for an individual 
 max_depth(vcf.filt): max depth filter
 
 write.vcf(vcf.filt.indSNPMiss, "\~/Projects/eco_genomics_2/Population Genomics /Outputs/vcf_final.filtered.vcf.gz"): save files, make sure to include file types (vcf.gz)
+
+### 9/19/24 Diversity Differentiation, making a manhattan plot
+
+Used the saved filtered VCF file made last class
+
+used tidyverse package to make the plot read in VCF files
+
+read metadata
+
+\*see code for more detailed annotations
+
+CM is the real chromosome assembly
+
+JARYM are scaffolds
+
+Able to assign numbers to each of the chromosomes among the populations
+
+each dot on the plot is a SNP
+
+each color is an alternating chromosome the V is most likely a centromere
