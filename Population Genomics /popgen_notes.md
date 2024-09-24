@@ -101,3 +101,15 @@ Able to assign numbers to each of the chromosomes among the populations
 each dot on the plot is a SNP
 
 each color is an alternating chromosome the V is most likely a centromere
+
+### 9/24/24 ggplot of diversity data 
+
+Many of the positions of SNPs are located in positions that are multiples of 3- this is due to differences in the third position of a codon that are typically non-synonymous
+
+used tidyverse to create a combined table of the Hs data and put it into one place
+
+Used filtered Hs data to create a ggplot histogram of genome-wide expected heterozygosity
+
+Made a table of Hs data with expected among each region including mean, stdev, and N
+
+(more detailed notes of each function in the script)
